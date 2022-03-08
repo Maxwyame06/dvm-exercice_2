@@ -7,5 +7,11 @@ function addClassToBody(){
 
     const body = document.querySelector('body');
     //body.classList.add('dark');
-    body.setAttribute('data-menu', 'open');
+    //body.classList.toggle('menu-open');
+    const currentState = body.getAttribute('menu-open')
+    if (currentState == 'open'){
+        body.setAttribute('menu-open', 'open'),
+    } else {
+        body.toggleAttribute('menu-open', 'close');
+    }
 }

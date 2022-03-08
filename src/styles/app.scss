@@ -4,11 +4,13 @@
 .school-img {
     width: 320px;
 }
+
 .btn-menu{
     background-image: url(../assets/images/bars.svg);
     background-size: 100% 100%;
     width: 50px;
     height: 50px;
+    border: none;
 }
 .li--nav{
     display: none;
@@ -19,6 +21,9 @@ li{
 }
 
 body[data-menu="open"]{
+    nav{
+        background-color: aqua;
+    }
     .btn-menu{
         background-image: url(../assets/images/close.svg);
         background-size: 100% 100%;
@@ -29,11 +34,23 @@ body[data-menu="open"]{
     h1{
         color: white;
     }
+    .tittle{
+        color: black;
+        font-size: 21px;
+    }
+    .border-bot{
+        border-bottom: solid gray 1px;
+    }
     .li--nav{
         display: none;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 100px;
+        color: blue;
     }
 }
+
+/* .menu{
+    display : none;}
+    
