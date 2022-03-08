@@ -4,18 +4,36 @@
 .school-img {
     width: 320px;
 }
-.btn-go{
-    color: red;
+.btn-menu{
+    background-image: url(../assets/images/bars.svg);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+}
+.li--nav{
+    display: none;
+}
+li{
+    list-style: none;
+    margin-bottom: 5px;
 }
 
-body[data-menu="close"]{
+body[data-menu="open"]{
     .btn-menu{
-        background: url(https://raw.githubusercontent.com/dwmaj/devm/master/weather-ressources/icons/bars.svg);
-        width: 100px;
-        height: 100px;
+        background-image: url(../assets/images/close.svg);
+        background-size: 100% 100%;
+        width: 50px;
+        height: 50px;
     }
-   
+    
     h1{
         color: white;
+    }
+    .li--nav{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
     }
 }
