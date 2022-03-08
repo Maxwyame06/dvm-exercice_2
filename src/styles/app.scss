@@ -4,3 +4,18 @@
 .school-img {
     width: 320px;
 }
+.btn-go{
+    color: red;
+}
+
+body[data-menu="close"]{
+    .btn-menu{
+        background: url(https://raw.githubusercontent.com/dwmaj/devm/master/weather-ressources/icons/bars.svg);
+        width: 100px;
+        height: 100px;
+    }
+   
+    h1{
+        color: white;
+    }
+}
